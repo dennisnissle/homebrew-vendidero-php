@@ -154,8 +154,6 @@ class PhpAT71 < Formula
     args << "--with-openssl=/usr/local/opt/openssl/"
     args << "--with-curl=/usr/local/opt/curl/"
 
-    print "With local openssl and curl"
-
     system "./configure", *args
     system "make"
     system "make", "install"
