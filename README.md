@@ -1,6 +1,10 @@
 # Install PHP formulas with homebrew openSSL and CURL
 
 ```
+brew uninstall curl
+brew install curl --with-openssl
+brew link curl --force
+
 brew tap vendidero/homebrew-vendidero-php
 
 brew update
